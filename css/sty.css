@@ -1,0 +1,77 @@
+    * {
+      font-family: Arial, sans-serif;
+      background:  #273545;
+      margin: 0;
+      padding: 0;
+    }
+
+ 
+    .food-h1 h1,
+    .drink-h1 h1,
+    .desrts-h1 h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 40px 0 20px;
+      color: #d35400;
+    }
+
+    .food-grid,
+    .drink-grid,
+    .desrts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 40px 40px;
+    }
+
+    /* الكارت */
+    .card {
+      background: #273545;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .card .name {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #d4d428;
+    }
+
+    .card .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #d35400;
+    }
+
+    /* موبايل */
+    @media (max-width: 600px) {
+      .food-grid,
+      .drink-grid,
+      .desrts-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px;
+      }
+
+      .card img {
+        height: 160px;
+      }
+    }
+
+
+
+
